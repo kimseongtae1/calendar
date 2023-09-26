@@ -1,0 +1,93 @@
+body{
+  max-width: 480px;
+  margin: 0 auto;
+  background-color: beige;
+}
+.react-calendar{
+  width: 100%;
+  border: 2px solid yellowgreen;
+  border-radius: 10px;
+  margin: 30px auto;
+  margin-top: 100px !important;
+  button{
+    height: 50px;
+  }
+}
+
+.todo-container{
+  display: flex;
+  flex-direction: column;
+  h2{
+    text-align: center;
+  }
+  input{
+    width: 80%;
+    height: 50px;
+    border: 2px solid yellowgreen;
+    border-radius: 20px;
+    margin: 20px auto;
+  }
+  button{
+    background-color: yellowgreen;
+    color: white;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    cursor: pointer;
+  }
+  ul{
+    padding-left: 0;
+    margin: 50px 0;
+    list-style: none;
+    border: 2px solid yellowgreen;
+    border-radius: 20px;
+ li{
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  div{
+    width: 80%;
+    margin: 20px auto;
+  }
+ }
+  }
+  .pagination{
+    display: flex;
+    align-items: center;
+    button{
+      cursor: pointer;
+      width: 10%;
+    }
+  }
+}
+ /* 선택한 날짜의 배경색을 변경합니다. */
+ .react-calendar__tile--active {
+   background-color: grey !important;
+   border-radius: 10px;
+ }
+
+ .react-calendar__tile--now {
+  border-radius: 10px;
+  background: #a2dd17; 
+}
+
+
+
+
+ /* 생성된 일정이 있는 날짜의 배경색을 변경합니다. */
+ .todo-count.active {
+width: 80%;
+margin: 0 auto;
+  border-radius: 20px;
+   background-color: lightgreen;
+   color: white;
+
+
+ }
+ #map{
+  border-radius: 30px;
+  margin: 20px auto;
+  margin-bottom: 100px !important;
+ }
